@@ -23,6 +23,10 @@ public class TimberFall extends JavaPlugin {
     public void onEnable() {
         Banner.print(this);
         saveDefaultConfig();
+        // Add keys from newer versions to an existing config
+        getConfig().options().copyDefaults(true);
+        saveConfig();
+        reloadConfig();
         this.disabledKey = new NamespacedKey(this, "disabled");
 
         // Register listeners
