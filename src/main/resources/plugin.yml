@@ -1,0 +1,21 @@
+name: TimberFall
+version: ${version}
+main: de.derjannik.timberfall.TimberFall
+api-version: "1.21"
+authors: [DerJannik]
+website: https://de.fiverr.com/s/xXgY29x
+description: Trees do not vanish, they tip over and crash to the ground
+
+commands:
+  timberfall:
+    description: Toggle tree felling and manage TimberFall
+    usage: /timberfall [toggle|reload|info]
+    aliases: [timber, tf]
+
+permissions:
+  timberfall.use:
+    description: Fell whole trees with an axe
+    default: true
+  timberfall.admin:
+    description: Reload the configuration
+    default: op

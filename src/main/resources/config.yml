@@ -1,0 +1,39 @@
+# TimberFall by DerJannik
+# Need a custom plugin? https://de.fiverr.com/s/xXgY29x
+
+# ALWAYS, SNEAK (only while sneaking) or NOT_SNEAK (sneak to break a single log)
+activation: NOT_SNEAK
+require-axe: true
+allow-creative: false
+disabled-worlds: []
+
+tree:
+  # Bigger structures are ignored and break like normal blocks
+  max-logs: 200
+  max-leaves: 600
+  # Logs without at least this many natural leaves are treated as a build, not a tree
+  min-leaves: 5
+  leaf-radius: 6
+
+animation:
+  # Fall time in ticks (20 ticks = 1 second)
+  duration: 28
+  # The tree stops early when it hits terrain
+  terrain-collision: true
+  sounds: true
+  particles: true
+
+# Ask protection plugins (WorldGuard, claims, ...) for every single log
+fire-break-events: true
+# Every felled log costs durability, Unbreaking is respected
+damage-per-log: true
+# Plants a sapling from the drops where the trunk stood
+replant: true
+# Puts drops straight into the inventory instead of on the ground
+drops-to-inventory: false
+
+messages:
+  enabled: "&aTimberFall enabled. &7Trees fall when you chop them."
+  disabled: "&cTimberFall disabled. &7Logs break one by one."
+  reloaded: "&aTimberFall configuration reloaded."
+  no-permission: "&cYou do not have permission to do that."
