@@ -55,7 +55,6 @@ public class TimberFall extends JavaPlugin {
             case "info" -> {
                 sender.sendMessage(ChatColor.GOLD + "TimberFall " + ChatColor.GRAY + "v" + getDescription().getVersion()
                         + " by " + ChatColor.YELLOW + "DerJannik");
-                sender.sendMessage(ChatColor.GRAY + "Custom plugins: " + ChatColor.AQUA + Banner.FIVERR);
             }
             default -> {
                 if (!(sender instanceof Player player)) {

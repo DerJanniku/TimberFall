@@ -3,7 +3,6 @@ version: ${version}
 main: de.derjannik.timberfall.TimberFall
 api-version: "1.21"
 authors: [DerJannik]
-website: https://de.fiverr.com/s/xXgY29x
 description: Trees do not vanish, they tip over and crash to the ground
 
 commands:
